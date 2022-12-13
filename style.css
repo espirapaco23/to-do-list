@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  padding: 30px 40px;
+  width: 40%;
+  min-width: 450px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#newTask {
+  position: relative;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+#newTask input {
+  position: relative;
+  color: #111111;
+  padding: 12px;
+  width: 70%;
+  height: 45px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  border-radius: 5px;
+}
+
+#newTask button {
+  cursor: pointer;
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #03a9f4;
+}
+
+#newTask input:focus {
+  outline: none;
+  border-color: #8052ec;
+}
+
+#tasks {
+  position: relative;
+  padding: 30px 20px;
+  margin-top: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.task {
+  justify-content: space-between;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding: 5px 10px;
+  height: 50px;
+  border-bottom: 2px solid #d1d3d4;
+}
+
+.task span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.task button {
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 100%;
+  background-color: #03a9f4;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
